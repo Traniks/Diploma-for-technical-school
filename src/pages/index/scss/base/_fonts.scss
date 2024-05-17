@@ -1,0 +1,19 @@
+$font-path: '../../fonts/';
+
+@mixin font-face($font-family, $font-name, $weight) {
+    @font-face {
+        font-family: "#{$font-family}";
+        src: url('#{$font-path}#{$font-name}.eot');
+        src: url('#{$font-path}#{$font-name}.eot?#iefix') format('embedded-opentype'),
+            url('#{$font-path}#{$font-name}.woff') format("woff"),
+            url('#{$font-path}#{$font-name}.woff2') format("woff2"),
+            url('#{$font-path}#{$font-name}.ttf') format('truetype');
+        font-weight: #{$weight};
+        font-style: normal;
+        font-display: swap;
+    }
+}
+
+@include font-face("Montserrat Alternates", "MontserratAlternates-Regular", 400);
+@include font-face("Montserrat Alternates", "MontserratAlternates-SemiBold", 600);
+@include font-face("Montserrat Alternates", "MontserratAlternates-Bold", 700);

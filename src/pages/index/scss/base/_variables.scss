@@ -1,0 +1,53 @@
+:root {
+    // background
+    --bg-main: #ffffff;
+
+    // gradient
+    --gradient-main: linear-gradient(90.68deg, #a17eff .99%, #69dbff 103.91%);
+    --gradient-lite: linear-gradient(98.95deg, rgba(246, 250, 255, .5) 6.09%, rgba(223, 245, 255, .5) 93%);
+    --gradient-btn: linear-gradient(90deg, #6cd4ff 0, #00b2f7 100%);
+
+    --gradient-hover: linear-gradient(271.88deg, #3cc9ff -1.63%, #9176ea 80.83%);
+    
+    --gradient-circle: linear-gradient(145.06deg, #aa68f6 14.06%, #50b9ff 98.24%);
+    
+
+    // border
+    --border-main: #08b5f8;
+
+    // header 
+    --header-bg: #ffffff;
+    // footer 
+    --footer-bg: linear-gradient(98.95deg, rgba(246, 250, 255, .5) 6.09%, rgba(223, 245, 255, .5) 93%);
+    
+    // burger
+    --burger-bg: rgba(0, 0, 0, 0);
+    --burger-color: #08b5f8;
+
+    // nav
+    --menu-bg: #ffffff;
+
+    //text
+    --text-main: #000000;
+    --text-active: #6c379d;
+
+    //btn
+    --btnColor-default_bg: #FFB548;
+    --btnColor-default_text: #000000;
+
+    --btnColor-hover_bg: #ffffff;
+    --btnColor-hover_text: #000000;
+
+    --btnColor-focus_bg: #FFB548;
+    --btnColor-focus_text: #000000;
+    --btnBorder-focus_border: #ffffff;
+
+    // z-index
+    --index-elem-1: 1; // Для наползающих элементов
+    --index-elem-2: 2; // Для наползающих элементов
+    --index-elem-3: 3; // Для наползающих элементов
+    --index-mask: 4; // Для масок и оверлеев
+    --index-sidebar: 5; // Для сайдбаров
+    --index-modal: 6; // Для модалок
+    --index-topmost: 7; // Для перекрывающих все элементов
+}

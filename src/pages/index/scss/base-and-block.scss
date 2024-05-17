@@ -1,0 +1,44 @@
+@import "node_modules/normalize-scss/sass/normalize";
+
+@import "base/mixins";
+@import "base/variables";
+@import "base/fonts";
+
+@import "blocks/header";
+@import "blocks/footer";
+
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    background-color: var(--bg-main);
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    &:hover {
+        color: #08b5f8;
+    }
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
