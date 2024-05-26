@@ -1,88 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../index/scss/base-and-block.scss">
-    <link rel="stylesheet" href="scss/program.scss">
-    <title>МБДОУ ДС №56 «Улыбка»</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../index/scss/base-and-block.scss" />
+		<link rel="stylesheet" href="scss/program.scss" />
+		<title>МБДОУ ДС №56 «Улыбка»</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logo"
+						>ДС №56 «УЛЫБКА»</a
+					>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
+					<div class="header__menu" data-header="menu">
+						<nav class="header__nav">
+							<lu class="header__list">
+								<!-- item-1 -->
+								<li
+									class="header__list-item header__list-item_active"
+								>
+									<a href="index.html">Главная</a>
+								</li>
 
-                <a href="index.html" class="header__logo">ДС №56 «УЛЫБКА»</a>
+								<!-- item-2 -->
+								<li class="header__list-item">
+									<a href="about.html">О нас</a>
+								</li>
 
-                <div class="header__menu" data-header="menu">
+								<!-- item-3 -->
+								<li class="header__list-item">
+									<a href="program.html">Программа</a>
+								</li>
 
-                    <nav class="header__nav">
-                        <lu class="header__list">
+								<!-- item-4 -->
+								<li class="header__list-item">
+									<a href="faq.html">Вопросы</a>
+								</li>
 
-                            <!-- item-1 -->
-                            <li class="header__list-item header__list-item_active">
-                                <a href="index.html">Главная</a>
-                            </li>
+								<!-- item-5 -->
+								<li class="header__list-item">
+									<a href="contact.html">Контакты</a>
+								</li>
+							</lu>
+						</nav>
 
-                            <!-- item-2 -->
-                            <li class="header__list-item">
-                                <a href="about.html">О нас</a>
-                            </li>
+						<button
+							class="header__blind-btn"
+							data-header="blind-btn"
+						>
+							<img src="../index/icons/eye.png" alt="eye" />
+							<p>Версия для слабовидящих</p>
+						</button>
+					</div>
 
-                            <!-- item-3 -->
-                            <li class="header__list-item">
-                                <a href="program.html">Программа</a>
-                            </li>
+					<button
+						class="header__burger"
+						data-header="burger"
+						aria-label="Открыть меню"
+					>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
 
-                            <!-- item-4 -->
-                            <li class="header__list-item">
-                                <a href="faq.html">Вопросы</a>
-                            </li>
+		<main>
+			<section class="program">
+				<div class="program__circle"></div>
+				<div class="program__circle2"></div>
+				<div class="program__circle3"></div>
+				<div class="program__circle4"></div>
 
-                            <!-- item-5 -->
-                            <li class="header__list-item">
-                                <a href="contact.html">Контакты</a>
-                            </li>
+				<div class="container">
+					<h1 class="program__title">
+						Реализуемые образовательные программы
+					</h1>
 
-                        </lu>
-                        
-                    </nav>
+					<p class="program__subtitle">
+						В ДОУ реализуются Основная образовательная программа
+						(ООП) и Адаптированная основная образовательная
+						программа (АООП).
+					</p>
 
-                    <button class="header__blind-btn" data-header="blind-btn">
-                        <img src="../index/icons/eye.png" alt="eye">
-                        <p>Версия для слабовидящих</p>
-                    </button>
-                    
-                </div>
+                    <div class="program__banner">
+                        <h3 class="program__banner-title">Наши занятия</h3>
+                        <ul class="program__banner-list">
+                            <li>Нормативный срок обучения по ООП – 5 лет</li>
+                            <li>Нормативный срок обучения по АООП – 2 года</li>
+                            <li>Язык, на котором осуществляется образование по ООП и АООП– русский язык</li>
+                            <li>При реализации ООП и АООП используется электронное обучение и дистанционные образовательные технологии.</li>
+                        </ul>
+                    </div>
 
-                <button class="header__burger" data-header="burger" aria-label="Открыть меню">
-                    <span></span>
-                </button>
+                    <p class="program__description"><span>Срок действия государственной аккредитации ООП и АООП:</span> В соответствии с ст. 92 Государственная аккредитация образовательной деятельности (закон «Об образовании в РФ» 273-ФЗ, глава 12, ст.92.) Государственная аккредитация образовательной деятельности проводится по основным образовательным программам, реализуемым в соответствии с федеральными государственными стандартами, за исключением образовательных программ дошкольного образования, а также по основным образовательным программам, реализуемым в соответствии с образовательными стандартами.</p>
+                    <p class="program__description"><span>Учебные предметы, курсы, дисциплины (модули), предусмотренные ООП и АООП</span> – дошкольное образование по пяти направлениям: познавательное развитие, речевое развитие, художественно-эстетическое развитие, физическое развитие и социально-коммуникативное развитие.</p>
+                    <p class="program__description"><span>Практики, предусмотренные ООП И АООП</span> – практические занятия с обучающимися осуществляются в групповых помещениях, музыкальном и спортивном залах, других помещениях для образовательной деятельности, на участке детского сада.</p>
 
-            </div>
-        </div>
-    </header>
+					<h2 class="program__title">
+						Группы для детей от 2 до 7 лет
+					</h2>
 
-    <main>
+                    <div class="program__wrapper">
 
-        <section class="first">
-            <div class="container">
-                <p style="padding: 430px 0;">content</p>
-            </div>
-        </section>
+                        <!-- box-1 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">1,5 - 2 года</h3>
+                            <div class="program__box-description">Самый нежный возраст, требующий особого внимания. Постепенная адаптация к новым людям, условиям - лучший способ приучить ребенка к садику.</div>
+                        </div>
 
-    </main>
+                        <!-- box-2 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">2 - 3 года</h3>
+                            <div class="program__box-description">Новый виток в развитии: дети учатся говорить, мыслить, выражать свои желания. Именно поэтому малышу необходим коллектив и развивающие занятия, в том числе занятия с логопедом.</div>
+                        </div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__privacy-policy"><a href="https://bkobr.ru/privacy-policy/">Политика конфиденциальности</a></p>
-            <p class="footer__сopyright">© 2013 — 2024 МБДОУ ДС №56 «УЛЫБКА»</p>
-            <p class="footer__creator">Реализовал сайт <a href="https://kwork.ru/user/traniks">Traniks</a></p>
-        </div>
-    </footer>
+                        <!-- box-3 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">3 - 4 года</h3>
+                            <div class="program__box-description">Развивается образное мышление. Ребенок учится выражать свои эмоции, которые иногда зашкаливают. Дети нуждаются в общении, обожают играть.</div>
+                        </div>
 
-    <script src="../index/js/blocks.js"></script>
-    <script src="js/program.js"></script>
-</body>
+                        <!-- box-4 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">4 - 5 лет</h3>
+                            <div class="program__box-description">Период активного роста. Дети усваивают много нового, поэтому разноплановые занятия крайне полезны для развития формирующейся личности.</div>
+                        </div>
+
+                        <!-- box-5 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">5 - 6 лет</h3>
+                            <div class="program__box-description">5-6 лет - пик развития творчества детей. Систематические развивающие занятия совершенствуют психические процессы: память, мышление, восприятие, воображение, и мир открывается для дошкольника по - новому. Желание и возможности открывать новые знания позволяют хорошо подготовиться к школе.</div>
+                        </div>
+
+                        <!-- box-6 -->
+                        <div class="program__box">
+                            <h3 class="program__box-title">6-7 лет</h3>
+                            <div class="program__box-description">6-7 лет - активная подготовка к школе. Формирование познавательной сферы и психологической готовности к школе.</div>
+                        </div>
+                    </div>
+
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="footer__privacy-policy">
+					<a href="https://bkobr.ru/privacy-policy/"
+						>Политика конфиденциальности</a
+					>
+				</p>
+				<p class="footer__сopyright">
+					© 2013 — 2024 МБДОУ ДС №56 «УЛЫБКА»
+				</p>
+				<p class="footer__creator">
+					Реализовал сайт
+					<a href="https://kwork.ru/user/traniks">Traniks</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../index/js/blocks.js"></script>
+		<script src="js/program.js"></script>
+	</body>
 </html>

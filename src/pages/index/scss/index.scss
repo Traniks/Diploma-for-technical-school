@@ -1,3 +1,7 @@
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+
 .hero {
     padding: 100px 0;
     background: var(--bg-main);
@@ -151,12 +155,42 @@
         font-weight: 600;
     }
 
+    &__trash {
+        margin: 40px 0 0 0;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
     &__botton {
         margin: 40px 0 0 0;
         font-weight: 400;
         font-size: 25px;
         text-align: center;
         text-wrap: balance;
+    }
+}
+
+#hero-slider {
+    margin: 40px 0 0 0;
+    padding: 0 0 50px 0;
+    width: 100%;
+
+    .swiper-slide {
+        // width: 440px;
+        padding: 0 40px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        &::after {
+            color: #a17eff;
+        }
+    }
+    .swiper-pagination-bullet-active {
+        background: #a17eff;
     }
 }
 

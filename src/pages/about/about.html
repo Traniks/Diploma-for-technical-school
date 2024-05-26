@@ -1,88 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../index/scss/base-and-block.scss">
-    <link rel="stylesheet" href="scss/about.scss">
-    <title>МБДОУ ДС №56 «Улыбка»</title>
-</head>
-<body>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../index/scss/base-and-block.scss" />
+		<link rel="stylesheet" href="scss/about.scss" />
+		<title>МБДОУ ДС №56 «Улыбка»</title>
 
-    <header class="header">
-        <div class="container">
-            <div class="header__wrapper">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
 
-                <a href="index.html" class="header__logo">ДС №56 «УЛЫБКА»</a>
+		<!-- Demo styles -->
+		<style>
+			.swiper {
+				width: 240px;
+				height: 320px;
+			}
 
-                <div class="header__menu" data-header="menu">
+			.swiper-slide {
+				/* display: flex; */
+				align-items: center;
+				justify-content: center;
+				border-radius: 18px;
+				font-size: 22px;
+				font-weight: bold;
+				color: #fff;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<a href="index.html" class="header__logo"
+						>ДС №56 «УЛЫБКА»</a
+					>
 
-                    <nav class="header__nav">
-                        <lu class="header__list">
+					<div class="header__menu" data-header="menu">
+						<nav class="header__nav">
+							<lu class="header__list">
+								<!-- item-1 -->
+								<li
+									class="header__list-item header__list-item_active"
+								>
+									<a href="index.html">Главная</a>
+								</li>
 
-                            <!-- item-1 -->
-                            <li class="header__list-item header__list-item_active">
-                                <a href="index.html">Главная</a>
-                            </li>
+								<!-- item-2 -->
+								<li class="header__list-item">
+									<a href="about.html">О нас</a>
+								</li>
 
-                            <!-- item-2 -->
-                            <li class="header__list-item">
-                                <a href="about.html">О нас</a>
-                            </li>
+								<!-- item-3 -->
+								<li class="header__list-item">
+									<a href="program.html">Программа</a>
+								</li>
 
-                            <!-- item-3 -->
-                            <li class="header__list-item">
-                                <a href="program.html">Программа</a>
-                            </li>
+								<!-- item-4 -->
+								<li class="header__list-item">
+									<a href="faq.html">Вопросы</a>
+								</li>
 
-                            <!-- item-4 -->
-                            <li class="header__list-item">
-                                <a href="faq.html">Вопросы</a>
-                            </li>
+								<!-- item-5 -->
+								<li class="header__list-item">
+									<a href="contact.html">Контакты</a>
+								</li>
+							</lu>
+						</nav>
 
-                            <!-- item-5 -->
-                            <li class="header__list-item">
-                                <a href="contact.html">Контакты</a>
-                            </li>
+						<button
+							class="header__blind-btn"
+							data-header="blind-btn"
+						>
+							<img src="../index/icons/eye.png" alt="eye" />
+							<p>Версия для слабовидящих</p>
+						</button>
+					</div>
 
-                        </lu>
-                        
-                    </nav>
+					<button
+						class="header__burger"
+						data-header="burger"
+						aria-label="Открыть меню"
+					>
+						<span></span>
+					</button>
+				</div>
+			</div>
+		</header>
 
-                    <button class="header__blind-btn" data-header="blind-btn">
-                        <img src="../index/icons/eye.png" alt="eye">
-                        <p>Версия для слабовидящих</p>
-                    </button>
+		<main>
+			<section class="about">
+				<div class="about__circle"></div>
+				<div class="about__circle2"></div>
+				<div class="about__circle3"></div>
+				<div class="about__circle4"></div>
+
+				<div class="container">
                     
-                </div>
+					<div class="about__wrap">
+						<div class="about__content">
+							<h1 class="about__title">
+								О нашем садике <span>ДС №56 «УЛЫБКА»</span>
+							</h1>
+							<p class="about__subtitle">
+								Мы - профессионалы, знающие, каким должен быть
+								современный детский сад, чтобы отвечать
+								государственным требованиям к комфорту и
+								безопасности детей, запросам родителей и,
+								главное, потребностям детей. Мы создаем
+								идеальные условия для счастливого детства -
+								обстановку доброжелательности, дружбы, любви и
+								заботы. Предметно – пространственная развивающая
+								среда нашего детского садика вариативная и
+								обеспечивает комфорт и эмоциональное
+								благополучие детей, она стимулирует их
+								физическую активность. Здесь созданы все условия
+								для свободной игровой деятельности,
+								познавательной, проектной деятельности,
+								возможности для самовыражения средствами
+								искусства.
+							</p>
+						</div>
 
-                <button class="header__burger" data-header="burger" aria-label="Открыть меню">
-                    <span></span>
-                </button>
+                        <div id="about-slider" class="swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./img/about-1.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/about-2.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/about-3.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/about-4.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/about-5.jpg" alt=""></div>
+                                <div class="swiper-slide"><img src="./img/about-6.jpg" alt=""></div>
+                            </div>
 
-            </div>
-        </div>
-    </header>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-button-next"></div>
+                            
+                            <div class="swiper-pagination"></div>
+                        </div>
+					</div>
 
-    <main>
+                    <ul class="about__list">
+                        <li class="about__list-item">
+                            Непосредственно <span>образовательная деятельность выстраивается</span> в виде ведущей детской деятельности – <span>игровой с использованием деятельностного метода</span> – технологии, утвержденной ФГОС ДО как ведущей для дошкольного образования и развития, с интеграцией образовательных областей.
+                        </li>
+                        <li class="about__list-item">
+                            Целенаправленная <span>системная деятельность психолога и логопеда</span> в садах помогают каждому ребенку чувствовать себя успешным.
+                        </li>
+                        <li class="about__list-item">
+                            Нам важно <span>сохранить и укрепить физическое и психическое здоровье детей</span>, поэтому здоровье сберегающие технологии включены во все режимные моменты детей.
+                        </li>
+                        <li class="about__list-item">
+                            <span>В игре наши дети познают мир</span>, развивают психические процессы, с легкостью усваивают скорочтение, основы финансовой грамотности, английского языка и многое – многое другое.
+                        </li>
+                    </ul>
+                    
+                    <p class="about__list-bottom"><span>Выпускники наших садов – это дети</span>, умеющие мыслить, уверенные в себе, любознательные, чуткие, любящие близких и свою страну, готовые к продолжению образования в школе.</p>
 
-        <section class="first">
-            <div class="container">
-                <p style="padding: 430px 0;">content</p>
-            </div>
-        </section>
+					<h2 class="about__title">
+						Награды и достижения которыми <span>мы гордимся</span>
+					</h2>
 
-    </main>
+                    <div id="about-slider2" class="swiper">
+    
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./img/awards-1.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-2.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-3.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-4.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-5.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-6.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-7.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-8.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-9.jpg" alt=""></div>
+                            <div class="swiper-slide"><img src="./img/awards-10.jpg" alt=""></div>
+                        </div>
+        
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
 
-    <footer class="footer">
-        <div class="container">
-            <p class="footer__privacy-policy"><a href="https://bkobr.ru/privacy-policy/">Политика конфиденциальности</a></p>
-            <p class="footer__сopyright">© 2013 — 2024 МБДОУ ДС №56 «УЛЫБКА»</p>
-            <p class="footer__creator">Реализовал сайт <a href="https://kwork.ru/user/traniks">Traniks</a></p>
-        </div>
-    </footer>
+                        <div class="swiper-pagination"></div>
+                    </div>
 
-    <script src="../index/js/blocks.js"></script>
-    <script src="js/about.js"></script>
-</body>
+				</div>
+
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="container">
+				<p class="footer__privacy-policy">
+					<a href="https://bkobr.ru/privacy-policy/"
+						>Политика конфиденциальности</a
+					>
+				</p>
+				<p class="footer__сopyright">
+					© 2013 — 2024 МБДОУ ДС №56 «УЛЫБКА»
+				</p>
+				<p class="footer__creator">
+					Реализовал сайт
+					<a href="https://kwork.ru/user/traniks">Traniks</a>
+				</p>
+			</div>
+		</footer>
+
+		<script src="../index/js/blocks.js"></script>
+		<script src="js/about.js"></script>
+	</body>
 </html>

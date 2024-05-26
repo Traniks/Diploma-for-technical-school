@@ -1,0 +1,230 @@
+.program {
+    padding: 100px 0;
+    background: var(--bg-main);
+
+    &__circle {
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+
+            left: -10px;
+            top: 60%;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-circle);
+            animation: breath 4s infinite;
+        }
+    }
+
+    &__circle2 {
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+
+            right: 68%;
+            top: 6%;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-circle);
+            animation: breath-revers 4s infinite;
+        }
+    }
+
+    &__circle3 {
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+
+            right: -10px;
+            top: 80%;
+
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-circle);
+            animation: breath-revers 4s infinite;
+        }
+    }
+
+    &__circle4 {
+        &:before {
+            content: "";
+            display: inline-block;
+            position: absolute;
+
+            right: 5%;
+            top: 15%;
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: var(--gradient-circle);
+            animation: breath 4s infinite;
+        }
+    }
+
+    @keyframes breath {
+        0% {
+            transform: scale(1);
+        }
+
+        50% {
+            transform: scale(1.4);
+        }
+
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    @keyframes breath-revers {
+        0% {
+            transform: scale(2);
+        }
+
+        50% {
+            transform: scale(0.8);
+        }
+
+        100% {
+            transform: scale(2);
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 35px;
+        margin: 40px 0 0 0;
+        position: relative;
+
+        span {
+            color: var(--text-active);
+        }
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 550px;
+            height: 2%;
+
+            top: 50%;
+            left: -600px;
+            transform: translateY(-50%);
+
+            background: #673094;
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            width: 25px;
+            height: 25px;
+
+            top: 50%;
+            left: -50px;
+            transform: translateY(-50%);
+
+            border-radius: 50%;
+            background-image: linear-gradient(90.06deg, #957df3 .07%, #662d91 99.96%);
+        }
+    }
+
+    &__title:first-child {
+        margin: 0 0 0 0;
+    }
+
+    &__subtitle {
+        margin: 20px 0 0 0;
+        font-weight: 400;
+        font-size: 22px;
+        // text-align: center;
+        color: var(--text-main);
+    }
+
+    &__description {
+        margin: 20px 0 0 0;
+        font-weight: 400;
+        font-size: 22px;
+        // text-align: center;
+        color: var(--text-main);
+        span {
+            font-weight: 600;
+        }
+    }
+
+    &__banner {
+        margin: 20px auto 0 auto;
+        max-width: 1000px;
+        padding: 40px;
+        background: var(--gradient-main);
+        border-radius: 0 20px 0 20px;
+        color: #ffffff;
+    }
+
+    &__banner-title {
+        font-weight: 600;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    &__banner-list {
+        margin: 20px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        font-weight: 400;
+        font-size: 22px;
+    }
+
+    &__wrapper {
+        margin: 40px 0 0 0;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+
+        gap: 20px;
+
+        border-radius: 20px;
+        box-shadow: 0 5px 20px rgba(106, 52, 153, 0.2);
+
+        &:hover {
+            background: var(--gradient-main);
+
+            .program__box-title {
+                color: #ffffff;
+            }
+
+            .program__box-description {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__box-title {
+        color: var(--text-active);
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    &__box-description {
+        font-size: 22px;
+        font-weight: 400;
+    }
+}
