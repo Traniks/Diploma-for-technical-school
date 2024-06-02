@@ -1,6 +1,6 @@
 .contact {
     padding: clamp(3.125rem, 2.038rem + 5.43vw, 6.25rem) 0;
-    background: var(--bg-main);
+    // background: var(--bg-main);
 
     &__circle {
         &:before {
@@ -52,6 +52,31 @@
         }
     }
 
+    &__decor3 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__decor4 {
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__wave1 {
+        img {
+            width: 100%;
+            position: absolute;
+            bottom: 45%;
+            z-index: -1;
+        }
+    }
+
     @keyframes breath {
         0% {
             transform: scale(1);
@@ -86,11 +111,12 @@
         &:before {
             content: "";
             position: absolute;
-            width: 1000px;
+            width: 550px;
             height: 2%;
 
             top: 50%;
-            left: -87%;
+            left: -600px;
+            
             transform: translateY(-50%);
 
             background: #673094;

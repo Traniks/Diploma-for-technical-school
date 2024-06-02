@@ -69,6 +69,11 @@
             font-size: clamp(1.125rem, 0.857rem + 1.34vw, 1.5rem);
         }
     }
+    &__list-item_active {
+        a {
+            color: #08b5f8;
+        }
+    }
 
     &__blind-btn {
         display: flex;

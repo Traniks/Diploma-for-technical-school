@@ -1,6 +1,6 @@
 .footer {
     padding: 20px 0;
-    background: var(--gradient-lite);
+    background: var(--footer-bg);
     text-align: center;
     font-weight: 400;
 
@@ -10,19 +10,28 @@
 
     border-radius: 20px 20px 0px 0px;
 
-    border: 1px solid var(--border-main);
+    // border: 1px solid var(--border-main);
 
     &__privacy-policy {
         font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
+        color: var(--bg-main);
+        a {
+            color: var(--bg-main);
+        }
     }
     
     &__сopyright {
         margin: 10px 0 0 0;
         font-size: 12px;
+        color: var(--bg-main);
     }
 
     &__creator {
         margin: 10px 0 0 0;
         font-size: 14px;
+        color: var(--bg-main);
+        a {
+            color: var(--bg-main);
+        }
     }
 }

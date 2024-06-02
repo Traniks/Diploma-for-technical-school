@@ -1,6 +1,6 @@
 .program {
     padding: 100px 0;
-    background: var(--bg-main);
+    // background: var(--bg-main);
 
     &__circle {
         &:before {
@@ -67,6 +67,31 @@
             border-radius: 50%;
             background: var(--gradient-circle);
             animation: breath 4s infinite;
+        }
+    }
+
+    &__decor3 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__decor4 {
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__wave1 {
+        img {
+            width: 100%;
+            position: absolute;
+            top: 60%;
+            z-index: -1;
         }
     }
 
@@ -203,6 +228,7 @@
 
         border-radius: 20px;
         box-shadow: 0 5px 20px rgba(106, 52, 153, 0.2);
+        background: #fff;
 
         &:hover {
             background: var(--gradient-main);

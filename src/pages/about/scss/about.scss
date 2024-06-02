@@ -1,6 +1,6 @@
 .about {
     padding: 100px 0;
-    background: var(--bg-main);
+    // background: var(--bg-main);
 
     &__circle {
         &:before {
@@ -68,6 +68,22 @@
             background: var(--gradient-circle);
             animation: breath 4s infinite;
         }
+    }
+
+    &__decor3 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__decor4 {
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
     }
 
     @keyframes breath {
@@ -159,14 +175,33 @@
     }
 
     &__list {
-        margin: 30px 0 0 0;
+        margin: -5px 0 0 0;
+        padding: 0 20px;
         font-size: 20px;
         font-weight: 400;
         display: flex;
         flex-direction: column;
         gap: 20px;
+        background: #F5FAFF;
         span {
             font-weight: 600;
+        }
+    }
+
+    &__wave_1 {
+        margin: 50px 0 0 0;
+
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+
+    &__wave_2 {
+        img {
+            width: 100%;
+            // height: 100%;
+            transform: rotate(180deg);
         }
     }
 

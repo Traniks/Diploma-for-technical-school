@@ -4,7 +4,7 @@
 
 .hero {
     padding: 100px 0;
-    background: var(--bg-main);
+    // background: var(--bg-main);
 
     &__circle {
         &:before {
@@ -74,6 +74,57 @@
         }
     }
 
+    &__decor {
+        position: absolute;
+        top: 28%;
+        right: 10%;
+        z-index: -1;
+    }
+
+    &__decor2 {
+        position: absolute;
+        top: 50%;
+        left: 6%;
+        z-index: -1;
+    }
+
+    &__decor3 {
+        position: absolute;
+        top: 0%;
+        left: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__decor4 {
+        position: absolute;
+        bottom: 0%;
+        right: 10%;
+        transform: rotate(90deg);
+        z-index: -1;
+    }
+
+    &__wave1 {
+        img {
+            background: url("../icons/wave2.svg");
+            width: 100%;
+            position: absolute;
+            bottom: 50%;
+            z-index: -1;
+        }
+    }
+    &__wave2 {
+        img {
+            // background: url("../icons/wave2.svg");
+            width: 100%;
+            position: absolute;
+            bottom: 80%;
+            right: 10%;
+            z-index: -1;
+        }
+    }
+
+
     @keyframes breath {
         0% {
             transform: scale(1);
@@ -117,28 +168,51 @@
         color: var(--text-main);
     }
 
+    &__wave_1 {
+        margin: 50px 0 0 0;
+
+        img {
+            width: 100%;
+            // height: 100%;
+        }
+    }
+
+    &__wave_2 {
+        img {
+            width: 100%;
+            // height: 100%;
+            transform: rotate(180deg);
+        }
+    }
+
     &__wrapper {
-        margin: 40px 0 0 0;
+        margin: -5px 0 0 0;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         justify-items: center;
         gap: 30px;
+
+        padding: 40px;
+        background: #F5FAFF;
     }
 
     &__box {
         display: flex;
         padding: 20px;
-        
+
         align-items: center;
         justify-content: space-between;
         gap: 20px;
-        grid-column: span 2;;
+        grid-column: span 2;
+        ;
 
         border-radius: 20px;
         box-shadow: 0 5px 20px rgba(106, 52, 153, 0.2);
+
         &:last-child {
             grid-column: 2/4;
         }
+
         &:hover {
             background: var(--gradient-main);
         }
@@ -184,11 +258,13 @@
         }
     }
 
-    .swiper-button-next, .swiper-button-prev {
+    .swiper-button-next,
+    .swiper-button-prev {
         &::after {
             color: #a17eff;
         }
     }
+
     .swiper-pagination-bullet-active {
         background: #a17eff;
     }
