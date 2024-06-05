@@ -17,6 +17,7 @@ module.exports = {
 				program: './src/pages/program/program.html',
 				faq: './src/pages/faq/faq.html',
 				contact: './src/pages/contact/contact.html',
+				gallery: './src/pages/gallery/gallery.html',
 			},
 			js: {
 				filename: 'assets/js/[name].js',

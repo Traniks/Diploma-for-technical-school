@@ -1,5 +1,5 @@
-.program {
-    padding: 100px 0;
+.gallery {
+    padding: clamp(3.125rem, 2.038rem + 5.43vw, 6.25rem) 0;
     // background: var(--bg-main);
 
     &__circle {
@@ -90,7 +90,7 @@
         img {
             width: 100%;
             position: absolute;
-            top: 60%;
+            bottom: 45%;
             z-index: -1;
         }
     }
@@ -124,199 +124,65 @@
     }
 
     &__title {
+        width: 1200px;
+        margin: 0 auto;
+
         font-weight: 700;
-        font-size: 35px;
+        font-size: 50px;
+        text-align: center;
+        color: var(--text-main);
+    }
+
+    &__event {
         margin: 40px 0 0 0;
+        font-weight: 700;
+        font-size: clamp(1.5rem, 1.227rem + 1.36vw, 2.25rem);
         position: relative;
-
-        span {
-            color: var(--text-active);
-        }
-
+    
         &:before {
             content: "";
             position: absolute;
             width: 550px;
             height: 2%;
-
+    
             top: 50%;
             left: -600px;
+    
             transform: translateY(-50%);
-
+    
             background: #673094;
         }
-
+    
         &:after {
             content: "";
             position: absolute;
             width: 25px;
             height: 25px;
-
+    
             top: 50%;
             left: -50px;
             transform: translateY(-50%);
-
+    
             border-radius: 50%;
             background-image: linear-gradient(90.06deg, #957df3 .07%, #662d91 99.96%);
         }
     }
 
-    &__title:first-child {
-        margin: 0 0 0 0;
-    }
-
-    &__subtitle {
-        margin: 20px 0 0 0;
-        font-weight: 400;
-        font-size: 22px;
-        // text-align: center;
-        color: var(--text-main);
-    }
-
-    &__description {
-        margin: 20px 0 0 0;
-        font-weight: 400;
-        font-size: 22px;
-        // text-align: center;
-        color: var(--text-main);
-        span {
-            font-weight: 600;
-        }
-    }
-
-    &__banner {
-        margin: 20px auto 0 auto;
-        max-width: 1000px;
-        padding: 40px;
-        background: var(--gradient-main);
-        border-radius: 0 20px 0 20px;
-        color: #ffffff;
-    }
-
-    &__banner-title {
-        font-weight: 600;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    &__banner-list {
-        margin: 20px 0 0 0;
-
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        
-        font-weight: 400;
-        font-size: 22px;
-    }
-
     &__wrapper {
-        margin: 40px 0 0 0;
-
+        margin: 50px 0 0 0;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 250px;
         gap: 20px;
     }
 
-    &__box {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        padding: 30px;
-
-        gap: 20px;
-
+    &__wrapper-item {
+        border: 10px solid #08b5f8;
         border-radius: 20px;
-        box-shadow: 0 5px 20px rgba(106, 52, 153, 0.2);
-        background: #fff;
-
-        cursor: pointer;
-
-        &:hover {
-            background: var(--gradient-main);
-
-            .program__box-title {
-                color: #ffffff;
-            }
-
-            .program__box-description {
-                color: #ffffff;
-            }
+        img {
+            width: 100%;
+            height: 100%;
+            // border-radius: 20px;
         }
-    }
-
-    &__box-title {
-        color: var(--text-active);
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    &__box-description {
-        font-size: 22px;
-        font-weight: 400;
-    }
-}
-
-.modal {
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 5;
-
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    justify-content: center;
-    align-items: center;
-
-    &__wrapper {
-        padding: 20px;
-        width: 1200px;
-        background: var(--bg-main);
-        border-radius: 20px;
-    }
-
-    &__cross {
-        display: block;
-        margin: 0 0 0 auto;
-        cursor: pointer;
-    }
-    
-    &__content {
-        margin: 40px 0 0 0;
-    }
-
-    &__title {
-        text-align: center;
-
-        font-weight: 700;
-        font-size: 30px;
-        text-wrap: balance;
-    }
-
-    &__content-wrapper {
-        margin: 40px 0 0 0;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    &__teacher {}
-
-    &__teacher-img {
-        height: 600px;
-        margin: 0 auto;
-        display: block;
-    }
-
-    &__teacher-name {
-        margin: 30px 0 0 0;
-        font-size: 25px;
-        font-weight: 600;
-    }
-
-    &__teacher-num {
-        font-size: 25px;
     }
 }

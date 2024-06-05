@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.21" height="23.21" viewBox="0 0 23.21 23.21">
+  <defs>
+    <style>
+      .a {
+        fill: #000;
+      }
+
+      .b {
+        fill: #222;
+      }
+    </style>
+  </defs>
+  <title>close</title>
+  <path class="a" d="M33.94,11.31h0a1,1,0,0,1,0,1.42L12.73,33.94a1,1,0,0,1-1.42,0h0a1,1,0,0,1,0-1.41L32.53,11.31A1,1,0,0,1,33.94,11.31Z" transform="translate(-11.02 -11.02)"/>
+  <path class="b" d="M33.94,33.94h0a1,1,0,0,1-1.41,0L11.31,12.73a1,1,0,0,1,0-1.42h0a1,1,0,0,1,1.42,0L33.94,32.53A1,1,0,0,1,33.94,33.94Z" transform="translate(-11.02 -11.02)"/>
+</svg>
